@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	<LangVersion>8.0</LangVersion>
+	<RootNamespace>VideoDownloader.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	<DebugType>embedded</DebugType>
+	<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+	<GenerateDocumentationFile>False</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PluginSchema\PluginSchema.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)*.*&quot; &quot;$(SolutionDir)Video_Downloader\bin\$(ConfigurationName)\&quot;&#xD;&#xA;" />
+  </Target>
+
+</Project>

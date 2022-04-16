@@ -1,0 +1,15 @@
+# ROOT
+.vs/*
+packages/*
+
+# PluginSchema
+PluginSchema/bin/*
+PluginSchema/obj/*
+
+# Video_Downloader
+Video_Downloader/bin/*
+Video_Downloader/obj/*
+
+# YoutubeDlPlugin
+YoutubeDlPlugin/bin/*
+YoutubeDlPlugin/obj/*

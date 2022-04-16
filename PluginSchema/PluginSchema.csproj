@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>VideoDownloader.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <DebugType>embedded</DebugType>
+	<LangVersion>8.0</LangVersion>
+	<Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
